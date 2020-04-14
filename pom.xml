@@ -29,12 +29,12 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com/</uri>
 						<muleVersion>4.2.2</muleVersion>
-						<username>AnilBawneAPRIL1</username>
-						<password>Rajaram94@</password>
+						<username>${username}</username>
+						<password>${password}</password>
 						<applicationName>POCJENKIN</applicationName>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
+						<environment>${environment}</environment>
+<!-- 						<workers>1</workers> -->
+<!-- 						<workerType>Micro</workerType> -->
 					</cloudHubDeployment>
 				</configuration>
 

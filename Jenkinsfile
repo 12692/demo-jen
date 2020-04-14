@@ -14,10 +14,9 @@ pipeline {
     }
  	
     stage('Deploy CloudHub') { 
-       when { tag "*_DEV" }
        steps {
         echo 'Deploying only because this commit is tagged...'
-        bat 'mvn package deploy -DmuleDeploy' 
+        bat 'mvn package deploy -DmuleDeploy -Dusername=AnilBawneAPRIL1 -Dpassword=Rajaram94@ -Denvironment=Sandbox -DmuleVersion=4.2.2' 
       }
     }
   }
