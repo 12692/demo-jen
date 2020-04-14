@@ -28,10 +28,10 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>4.2.2</muleVersion>
+						<muleVersion>${app.runtime}</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
-						<applicationName>POCJENKIN</applicationName>
+						<applicationName>${artifactId}</applicationName>
 						<environment>${environment}</environment>
 <!-- 						<workers>1</workers> -->
 <!-- 						<workerType>Micro</workerType> -->
