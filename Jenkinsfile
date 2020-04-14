@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Build Application') { 
       steps {
-      echo 'mvn install ...'
         bat 'mvn clean install'
       }
     }
@@ -18,7 +17,7 @@ pipeline {
         ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
       }
        steps {
-        echo 'Deploying only because this commit is tagged...'
+        echo 'Deploying only because of code commit...'
         bat 'mvn package deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=Sandbox'
       }
     }
