@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build Application') { 
       steps {
-      echo mvn install ...'
+      echo 'mvn install ...'
         bat 'mvn clean install'
       }
     }
