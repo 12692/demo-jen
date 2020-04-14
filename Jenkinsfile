@@ -14,7 +14,8 @@ pipeline {
     }
  	
     stage('Deploy CloudHub') { 
-      steps {
+       when { tag "*_DEV" }
+       steps {
         echo 'Deploying only because this commit is tagged...'
         bat 'mvn package deploy -DmuleDeploy' 
       }
