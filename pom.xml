@@ -33,8 +33,6 @@
 						<password>${password}</password>
 						<applicationName>${project.artifactId}</applicationName>
 						<environment>${environment}</environment>
-<!-- 						<workers>1</workers> -->
-<!-- 						<workerType>Micro</workerType> -->
 					</cloudHubDeployment>
 				</configuration>
 
